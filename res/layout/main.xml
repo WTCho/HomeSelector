@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/lvFuncList" android:layout_width="match_parent" android:padding="3dp">
+        <Button android:text="@string/btn_clear_default_home" android:id="@+id/btnClearDefaultHome" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+        <Button android:text="@string/btn_set_default_home" android:id="@+id/btnSetDefaultHome" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>          
+    </LinearLayout>
+    <ListView android:id="@+id/lvHome" android:layout_height="wrap_content" android:layout_width="fill_parent"></ListView>
+    
+</LinearLayout>

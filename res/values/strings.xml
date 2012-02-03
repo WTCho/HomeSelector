@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HomeSelector</string>    
+    <string name="running_home">Running</string>
+    <string name="no_running_home"></string>
+    <string name="default_home">default</string>
+    <string name="btn_switch_home">Switch</string>
+    <string name="btn_clear_default_home">Clear Default Home</string>
+    <string name="btn_set_default_home">Set Default Home</string>
+</resources>

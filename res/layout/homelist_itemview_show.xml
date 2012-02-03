@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  android:layout_width="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="5dip">
+  <!-- android:layout_height="?android:attr/listPreferredItemHeight" android:padding="5dip"> -->
+    <ImageView android:src="@drawable/icon" android:id="@+id/ivHomeIcon" android:layout_alignParentLeft="true" android:layout_height="60dip" android:layout_width="60dip"></ImageView>
+    <RelativeLayout android:layout_toRightOf="@+id/ivHomeIcon" android:id="@+id/relativeLayout1" android:layout_height="fill_parent" android:layout_width="fill_parent" android:gravity="center_vertical" android:layout_alignTop="@+id/ivHomeIcon" android:layout_alignBottom="@+id/ivHomeIcon">
+            <RelativeLayout android:id="@+id/relativeLayout2" android:layout_height="fill_parent" android:layout_width="fill_parent" android:paddingLeft="5dip">
+            	<LinearLayout android:layout_height="fill_parent" android:layout_width="wrap_content" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_alignParentLeft="true">
+                	<TextView android:id="@+id/tvHomeLabel" android:layout_width="wrap_content" android:text="TextView" android:layout_height="wrap_content"></TextView>                	
+                	<LinearLayout android:layout_width="wrap_content" android:visibility="invisible" android:layout_height="wrap_content" android:id="@+id/llHomeState" android:orientation="horizontal">
+                		<TextView android:text="@string/running_home" android:textColor="@color/t_light_yellow" android:id="@+id/tvHomeStateRunning" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                		<TextView android:text=" - " android:textColor="@color/t_light_yellow" android:id="@+id/tvHomeStateSplit" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                		<TextView android:text="123" android:textColor="@color/t_light_yellow" android:id="@+id/tvHomeStateMem" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+                	</LinearLayout>
+                	<TextView android:text="@string/default_home" android:textColor="@color/light_green" android:id="@+id/tvHomeStateDefault" android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="invisible"></TextView>
+	            </LinearLayout>
+	            <LinearLayout android:layout_height="fill_parent" android:layout_width="wrap_content" android:id="@+id/linearLayout2" android:orientation="horizontal" android:layout_alignParentRight="true" android:gravity="center_vertical">
+	                <ImageView android:layout_height="40dp" android:layout_width="wrap_content" android:id="@+id/ivSwitchHome" android:src="@drawable/btn_switch_home" android:clickable="true"></ImageView>
+	                <Button android:focusable="false" android:visibility="invisible" android:id="@+id/btnSwitchHome" android:layout_width="65dip" android:layout_height="45dip" android:text="@string/btn_switch_home"></Button>
+	            </LinearLayout>
+		</RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
